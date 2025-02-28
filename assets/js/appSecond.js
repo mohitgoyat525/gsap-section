@@ -1,16 +1,15 @@
 const timeLine = gsap.timeline();
 const mediaQuery = gsap.matchMedia();
 
-  // Initial states
+  
   gsap.set("#img-one", { opacity: 0 });
   gsap.set("#img-two", { opacity: 0 });
   gsap.set("#img-three", { opacity: 0 });
   gsap.set("#img-four", { opacity: 0 });
   gsap.set("#img-five", { opacity: 0 });
 
-  // Create timeline animations
   timeLine
-    // Image 1 appears
+
     .to("#img-one", {
       opacity: 1,
       duration: 1,
@@ -102,7 +101,6 @@ const mediaQuery = gsap.matchMedia();
       },
       "-=0.5"
     )
-    // Image 4 fades out, Image 5 appears
     .to("#img-four", { opacity: 0, duration: 0.5 }, ">")
     .to("#tablet-arrow", {
       top: "10%",
@@ -128,8 +126,6 @@ const mediaQuery = gsap.matchMedia();
       },
       "-=0.5"
     );
-
-  // ScrollTrigger setup
   ScrollTrigger.create({
     trigger: ".main-section",
     start: "top top",
