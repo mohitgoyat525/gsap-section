@@ -15,11 +15,23 @@ const mediaQuery = gsap.matchMedia();
       opacity: 1,
       duration: 1,
       onStart: () =>
-        gsap.to("#come-btn", { backgroundColor: "#53849980", duration: 0.3, rotate:6 }),
+        gsap.to("#come-btn", {
+          backgroundColor: "#53849980",
+          duration: 0.3,
+          rotate: 6,
+        }),
       onReverseComplete: () =>
-        gsap.to("#come-btn", { backgroundColor: "#7EE49C80", duration: 0.3, rotate: 0 }),
+        gsap.to("#come-btn", {
+          backgroundColor: "#7EE49C80",
+          duration: 0.3,
+          rotate: 0,
+        }),
     })
     .to("#img-one", { opacity: 0, duration: 0.5 }, ">")
+    .to("#tablet-arrow", {
+      top: "1%",
+      duration: 1,
+    })
     .to(
       "#img-two",
       {
@@ -34,13 +46,17 @@ const mediaQuery = gsap.matchMedia();
         onReverseComplete: () =>
           gsap.to("#marketing-btn", {
             backgroundColor: "#7EE49C80",
-              duration: 0.3,
+            duration: 0.3,
             rotate: 0,
           }),
       },
       "-=0.5"
     )
     .to("#img-two", { opacity: 0, duration: 0.5 }, ">")
+    .to("#tablet-arrow", {
+      top: "5%",
+      duration: 1,
+    })
     .to(
       "#img-three",
       {
@@ -55,13 +71,17 @@ const mediaQuery = gsap.matchMedia();
         onReverseComplete: () =>
           gsap.to("#strumenti-btn", {
             backgroundColor: "#7EE49C80",
-              duration: 0.3,
+            duration: 0.3,
             rotate: 0,
           }),
       },
       "-=0.5"
     )
     .to("#img-three", { opacity: 0, duration: 0.5 }, ">")
+    .to("#tablet-arrow", {
+      top: "7%",
+      duration: 1,
+    })
     .to(
       "#img-four",
       {
@@ -76,7 +96,7 @@ const mediaQuery = gsap.matchMedia();
         onReverseComplete: () =>
           gsap.to("#qualifica-btn", {
             backgroundColor: "#7EE49C80",
-              duration: 0.3,
+            duration: 0.3,
             rotate: 0,
           }),
       },
@@ -84,6 +104,10 @@ const mediaQuery = gsap.matchMedia();
     )
     // Image 4 fades out, Image 5 appears
     .to("#img-four", { opacity: 0, duration: 0.5 }, ">")
+    .to("#tablet-arrow", {
+      top: "10%",
+      duration: 1,
+    })
     .to(
       "#img-five",
       {
@@ -96,7 +120,11 @@ const mediaQuery = gsap.matchMedia();
             rotate: 6,
           }),
         onReverseComplete: () =>
-          gsap.to("#crm-btn", { backgroundColor: "#7EE49C80", duration: 0.3, rotate: 0 }),
+          gsap.to("#crm-btn", {
+            backgroundColor: "#7EE49C80",
+            duration: 0.3,
+            rotate: 0,
+          }),
       },
       "-=0.5"
     );
