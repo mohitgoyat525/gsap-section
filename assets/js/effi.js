@@ -14,11 +14,11 @@ gsap.set("#content-counter", { opacity: 1 });
 
 const updateCounter = (value) => {
   gsap.to("#content-counter", {
-    opacity: 0, // Fade out
-    duration: 0.3,
+    opacity: 0, 
+    duration: 0.1,
     onComplete: () => {
       gsap.set("#content-counter", { innerHTML: value });
-      gsap.to("#content-counter", { opacity: 1, duration: 0.3 }); 
+      gsap.to("#content-counter", { opacity: 1, duration: 0.1 }); 
     },
   });
 };

@@ -1,0 +1,21 @@
+
+@font-face {
+  font-family: Neue_Machina_Light;
+  src: url("/assets/fonts/NeueMachina-Light.ttf");
+}
+@font-face {
+  font-family: Neue_Machina_Regular;
+  src: url("../fonts/NeueMachina-Regular.ttf");
+}
+@font-face {
+  font-family: Neue_Machina_Ultrabold;
+  src: url("/assets//fonts/NeueMachina-Ultrabold.ttf");
+}
+
+.ff-neue-machina-regular {
+  font-family: Neue_Machina_Regular !important;
+}
+.ff-neue-machina-light {
+  font-family: Neue_Machina_Light;
+}
+
