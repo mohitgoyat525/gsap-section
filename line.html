@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script src="https://cdn.tailwindcss.com"></script>
-    <title>Effi Section</title>
-    <link rel="shortcut icon" href="/assets/images/svg/right-arrow.svg" type="image/x-icon">
+    <title>Line Animation</title>
     <link rel="stylesheet" href="/assets/css/eff.css">
+    <link rel="shortcut icon" href="/assets/images/svg/right-arrow.svg" type="image/x-icon">
 </head>
 <body>
-    <section class="min-h-screen bg-black flex items-center justify-center text-3xl text-white">Scroll Down</section>
-    <section class="min-h-screen bg-gardient-blue flex items-center overflow-hidden justify-center flex-col relative  px-4 main-section bg-center bg-cover bg-no-repeat bg-[url('assets/images/png/effi-bg-img.png')]">
+    <section class="min-h-screen bg-black text-white flex items-center justify-center text-3xl">Scroll Down</section>
+     <section class="min-h-screen bg-gardient-blue flex items-center overflow-hidden justify-center flex-col relative  px-4 main-section bg-center bg-cover bg-no-repeat bg-[url('assets/images/png/effi-bg-img.png')]">
         <h1 class="text-white text-center text-[46px] leading-[55.2px] font-bold max-md:text-4xl max-sm:text-3xl ff-neue-machina-regular">Core Strategies</h1>
-        <p class="text-white text-center max-w-[819px] mx-auto font-normal text-base leading-[25.2px] mt-4">Our initial strategies use powerful burgeoning trends like Real Yield, Rebase, and others to generate cutting-edged yield innovations. These yield strategies stretch beyond the drought in stable coins and set the value for our native protocol token $EEFI. Check them out!'</p>
+        <p class="text-white text-center max-w-[819px] mx-auto font-normal text-base leading-[25.2px] my-4">Our initial strategies use powerful burgeoning trends like Real Yield, Rebase, and others to generate cutting-edged yield innovations. These yield strategies stretch beyond the drought in stable coins and set the value for our native protocol token $EEFI. Check them out!'</p>
+
+               <div id="line-animation" class="w-full h-1 bg-black relative rounded-md">
+  <div id="line-fill" class="h-full bg-white absolute left-0 top-0 rounded-md"></div>
+</div>
         <!-- -main-content -->
         <div class="flex justify-center items-center gap-12 mt-7 max-md:mt-3 max-md:flex-col max-md:gap-10 w-full max-w-[1140px] mx-auto">
             <!-- effi-img -->
@@ -62,6 +66,7 @@
                 </div>
                 </div>
                 </div>
+                <!-- effi-content-two -->
                 <div id="effi-content-two" class="absolute">
                     <h2 class="text-white text-3xl leading-[55.2px] font-bold max-md:text-2xl max-sm:text-xl ff-neue-machina-regular">Olympus Bond Rewards Vault</h2>
                     <ul class="list-decimal list-inside">
@@ -72,9 +77,11 @@
                 </div>
             </div>
         </div>
+ 
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="./assets/js/effi.js"></script>
+    
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="./assets/js/line.js"></script>
 </body>
 </html>
